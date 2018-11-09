@@ -1,10 +1,11 @@
 #include "BlackJackConcoleView.h"
-
+#include<ctime>
 
 
 BlackJackConsoleView::BlackJackConsoleView()
 	:game(0, 0)
 {
+	srand(time(NULL));
 	cout << "Hello!"<<endl;
 	cout << "Welcome to Black Jack game" << endl;
 	printAddMoney();
